@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Descontos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <h3>Digite seu Salário Bruto...</h3><br><br> 
+
+  Salário Bruto: <ion-input type="number" [(ngModel)]="salarioB" class="borda"></ion-input>
+  <br><br>
+
+  <h3>Nos campos abaixo digite seus descontos mensais, caso não tenha digite "0"...</h3>
+
+  <br><br>
+
+  INSS:<ion-input type="number" [(ngModel)]="inss" class="borda"></ion-input>
+
+  <br><br>
+
+  UNIMED:<ion-input type="number" [(ngModel)]="unimed" class="borda"></ion-input>
+
+  <br><br>
+  
+  Vale Transpote:<ion-input type="number" [(ngModel)]="transporte" class="borda"></ion-input>
+
+  <br><br>
+
+  Vale Refeição:<ion-input type="number" [(ngModel)]="comida" class="borda"></ion-input>
+
+  <br><br>
+
+  Descontos por divercidade(saidinha, atraso...):<ion-input type="number" [(ngModel)]="saidinha" class="borda"></ion-input>
+
+  <br><br>
+
+  Sindicato:<ion-input type="number" [(ngModel)]="sindicato" class="borda"></ion-input>
+
+  <br><br>
+
+  Carterinha do Club:<ion-input type="number" [(ngModel)]="club" class="borda"></ion-input>
+
+  <br><br>
+
+  <ion-button (click)="descontar()">Calcular Salário</ion-button>
+
+  <br><br>
+
+  <ion-label>Salário Líquido: {{resultado}}</ion-label>
+  
+  <br><br>
+
+
+  
+  <ion-button href="home">VOLTAR</ion-button>
+</ion-content>

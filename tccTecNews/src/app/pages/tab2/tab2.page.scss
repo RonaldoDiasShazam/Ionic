@@ -1,0 +1,37 @@
+
+ion-badge{
+    height: 30PX;
+    width: 100%;
+    
+}
+
+.mes{
+    font-size: 60px;
+    color: #b68500;
+
+}
+.fcale{
+    height: 40%;
+    width: 400px;
+    background-color: transparent;
+}
+.fab{
+    text-align: left;
+    ion-badge{
+    height: 100%;
+    width: 10%;
+    background: #fffb00;
+    }
+    ion-label{
+        color: black;
+    }
+}
+.estilo1{
+    height: 270px;
+    width: 100%;
+    background: #5e0000;
+    h4{
+        color:wheat;
+        text-align: center;
+    }
+}

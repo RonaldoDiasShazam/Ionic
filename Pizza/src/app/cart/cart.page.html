@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+    </ion-buttons>
+
+    <ion-buttons>
+      <ion-back-button defoulHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Carrinho de Pizza</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fundo">
+
+  <ion-list>
+    <div class="fundo">
+      <ion-item *ngFor="let item of selectdItems" lines="inset">
+        {{ item.count }}x {{ item.name }} - {{ item.price | currency: 'BRL':'symbol' }}
+        <ion-label slot="end" text-right>{{ (item.price * item.count) | currency:'BRL':'symbol' }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <p style="color:red">Total:</p> <span slot="end">{{ total | currency:'BRL':'symbol' }}</span>
+      </ion-item>
+    </div>
+  </ion-list>
+
+</ion-content>

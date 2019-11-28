@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Salário Líquido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="div1">
+  Digite seu Salário Bruto: <ion-input type="number" [(ngModel)]="salarioB" class="borda"></ion-input>
+  </div>
+  <br><br>
+  
+
+    <ion-button (click)="minimo()">Verificando o Salário</ion-button>
+    <br><br>
+    <ion-label>Seu Salário é de: {{resultado.toFixed(1) + ' Salário Minimo'}}</ion-label><br><br>
+
+    <ion-button href="home">VOLTAR</ion-button>
+</ion-content>

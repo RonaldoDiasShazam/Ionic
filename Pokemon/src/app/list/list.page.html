@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Pokemons
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar color="warning">
+    <ion-searchbar (ionInput)="buscaPokemon($event)" color="light" placeholder="Buscar por POKÉMON"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content color="medium">
+
+  <ion-list>
+    
+    <ion-item *ngFor="let pokemon of listaFiltrada">
+      <ion-chip color="danger" slot="start">{{ pokemon.numero }}</ion-chip>
+      <div>
+        <h3>{{ pokemon.nome }}</h3>
+        <ion-badge [color]="tipo" *ngFor="let tipo of pokemon.tipos">{{ tipo }}</ion-badge>
+      </div>
+      <ion-thumbnail slot="end">
+        <img src="pokemon.img">
+      </ion-thumbnail>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

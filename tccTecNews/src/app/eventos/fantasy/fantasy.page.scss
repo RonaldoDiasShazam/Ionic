@@ -1,0 +1,16 @@
+//  Para as ion-badge que tem um texto maior
+.estiloEv{
+    ion-badge{
+        height: 200px;
+        width: 100%;
+        --background: #c03434;
+        
+    }
+}
+
+//  Para as ion-badge de fora da Class
+ion-badge{
+    height: 100px;
+    width: 100%;
+    --background: #c03434;
+}

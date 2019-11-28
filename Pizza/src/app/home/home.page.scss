@@ -1,0 +1,52 @@
+ion-button{
+    --ion-color-primary: #9c1818;
+}
+
+.carrinho{
+    --ion-color-primary: #fafafa;
+}
+
+.logo{
+       background-image: linear-gradient(to right, #009b1a 0%,#ffffff 50%, #fc1919 70%);
+   }
+
+.coluna{
+     background-image: url("/assets/img/fundo.jpg");
+     background-repeat: no-repeat;
+    background-position: center center;
+  
+}
+
+h1{
+    text-align: center;
+    color: #ffffff; 
+}
+
+.btnMenu{
+    color: #353434;
+}
+
+
+.fundo{
+   --background: linear-gradient(to bottom, #b1f7cc 0%,#ff8c8c 100%);
+}
+
+ion-badge{
+    color:#000000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+
+.category-block{
+    margin-left: 4px;
+}
+
+.category-banner{
+    border-left: 8px solid var(--ion-color-secondary);
+    background: var(--ion-color-light);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
+}

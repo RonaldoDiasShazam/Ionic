@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Salário em Dolar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    Digite se Salálario Bruto:<ion-input type="number" [(ngModel)]="salarioB" class="borda"></ion-input>
+
+    <br><br>
+  
+    <ion-button (click)="dolar()">Convertendo Salário em dolar</ion-button>
+  
+    <br><br>
+  
+    <ion-label>Seu Salário é equivalenta à: {{resultado.toFixed(2) + ' Dolar'}}</ion-label><br><br>
+
+    <ion-button href="home">VOLTAR</ion-button>
+</ion-content>

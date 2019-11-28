@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab vertical="top" horizontal="start">
+    <ion-fab-button (click)="neve()">
+      <ion-icon name="snow"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="top" horizontal="center">
+    <ion-fab-button (click)="sol()">
+      <ion-icon name="sunny"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button (click)="nuvem()">
+      <ion-icon name="thunderstorm"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src={{caminho}}>
+
+
+
+  <ion-label>1-momento {{hora}}:{{minutos}}:{{segundos}}</ion-label><br>
+  <ion-label>2-dia {{semana}}</ion-label><br>
+  <ion-label>3-ano {{ano}}</ion-label><br>
+  <ion-label>{{formattedDate}}</ion-label><br>
+  <ion-label></ion-label><br>
+</ion-content>

@@ -1,0 +1,65 @@
+ion-badge{
+    width: 110px;
+    height: 100px;
+
+}
+.game{
+    ion-item{
+        --background: #c03434;
+    }
+    
+    ion-badge{
+    background: url('../../../assets/img/controle.png') no-repeat center center / cover !important;
+    }
+    ion-button{
+        --background: #ffee00;
+    }
+}
+.festa{
+    ion-item{
+        --background: #c03434;
+    }
+
+    ion-badge{
+    background: url('../../../assets/img/festa.jpg') no-repeat center center / cover !important;
+    }
+    ion-button{
+        --background: #ffee00;
+    }
+}
+.junina{
+    ion-item{
+        --background: #c03434;
+    }
+
+    ion-badge{
+    background: url('../../../assets/img/junina.jpg') no-repeat center center / cover !important;
+    }
+    ion-button{
+        --background: #ffee00;
+    }
+}
+.tec{
+    ion-item{
+        --background: #c03434;
+    }
+
+    ion-badge{
+    background: url('../../../assets/img/0101.jpg') no-repeat center center / cover !important;
+    }
+    ion-button{
+        --background: #ffee00;
+    }
+}
+.escola{
+    ion-item{
+        --background: #c03434;
+    }
+
+    ion-badge{
+    background: url('../../../assets/img/escola.jpg') no-repeat center center / cover !important;
+    }
+    ion-button{
+        --background: #ffee00;
+    }
+}

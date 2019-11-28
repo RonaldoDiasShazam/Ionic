@@ -1,0 +1,39 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+.titulo{
+    text-align: center;
+    ion-label{
+        font-family: courier,arial,helvetica;
+        font-size: 25px;
+    }
+}
+
+.botao{
+    color: black;
+    --background: #b81111;
+    --border-color: #b81111;
+}
+
+.estiloEv{
+    --background: #c03434;
+    ion-label{
+        font-size: 20px;
+        color: #000000;
+    }
+}
+ion-toolbar{
+    --background: #faf060;
+}
+ion-content{
+    --background: #d8d4d4;
+}
