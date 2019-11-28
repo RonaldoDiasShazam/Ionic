@@ -1,0 +1,16 @@
+.fundo {
+
+    background-image: url("/assets/imagens/ground.jpg"); 
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    
+    //background-image: linear-gradient(to right, #fff, rgb(6, 247, 127), #fff, rgb(250, 9, 9), #ffff);
+}
+
+/*ion-app.md [padding] {
+    padding: 0px;
+    background-image: "assets/imagens/ground.jpg";
+    background-size: cover;
+}*/

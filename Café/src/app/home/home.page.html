@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/imagens/cafe.jpg"><br>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fundo"><br>
+
+    <em>Cafeteria Café da Italia </em><ion-icon name="cafe"></ion-icon>
+
+    <p style="text-align: center"><b>Bebidas Quentes</b></p>
+
+    <div class="tamanho">
+      <p style="text-align: right">PEQUENO GRANDE</p>
+    </div>
+
+    <p>expresso....................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="expresso1()">R$ 4,50 </ion-button>
+      <ion-button style = "width: 60px; height: 35px; left: 5px" (click)="expresso2()">R$ 6,50</ion-button>
+    </p>
+
+    <p>descafeinado.............<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="descafeinado1()">R$ 5,00
+      </ion-button>
+      <ion-button style = "width: 60px; height: 35px; left: 5px" (click)="descafeinado2()">R$ 7,00</ion-button>
+    </p>
+
+    <p>romano.......................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="romano()">R$ 5,50</ion-button>
+    </p>
+
+    <p>espumone .................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="espumone()">R$ 6,50</ion-button>
+    </p>
+
+    <p>sem lactose...............<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="lactose()">R$ 6,50</ion-button>
+    </p>
+
+    <p>latte............................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="latte()">R$ 7,00</ion-button>
+    </p>
+
+    <p>mocha ...................... <ion-button style = "width: 60px; height: 35px; left: 5px" (click)="mocha()">R$ 9,50</ion-button>
+    </p>
+
+    <p>capuccino..................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="capuccino()">R$ 7,00</ion-button>
+    </p>
+
+    <p>capuccino c/ chocolate...........<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="capchoco()">R$ 9,50</ion-button>
+    </p>
+
+    <p>café c/ avelã...............<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="avela()">R$ 9,50</ion-button>
+    </p>
+
+    <p>café c/ panna.............<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="panna()">R$ 6,50</ion-button>
+    </p>
+
+    <p>café c/ lemon.............<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="lemon()">R$ 12,00</ion-button>
+    </p>
+
+    <p>café mentolado..........<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="mentolado()">R$ 12,00</ion-button>
+    </p>
+
+    <p>chocolate quente.......<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="quente()">R$ 9,00</ion-button>
+    </p>
+
+    <p>chá mate....................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="mate()">R$ 7,00</ion-button>
+    </p><br>
+
+    <p style="text-align: center"><b>Bebidas Geladas</b></p>
+
+    <p style="text-align: right">PEQUENO . GRANDE </p>
+
+    <p>chá gelado.................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="gelado()">R$ 9,00</ion-button>
+
+
+      <p>frapuccino..................<ion-button style = "width: 60px; height: 35px; left: 5px" (click)="frap1()">R$12,50</ion-button>
+        <ion-button style = "width: 60px; height: 35px; left: 5px" (click)="frap2()">R$15,00</ion-button>
+      </p><br>
+
+      <div *ngFor="let cart of itens" class="category-blok">
+
+        <ion-row no-padding class="category-banner">
+
+          <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+
+            {{ cat.category }}
+
+          </ion-col>
+
+        </ion-row>
+
+        <ion-slides [options]="slidesConfig">
+
+          <ion-slide *ngFor="let product of cat.products"></ion-slide>
+
+          <ion-card-header>
+
+            <ion-card-title>
+
+              {{ product.name }} - ${{ product.price }}
+
+            </ion-card-title>
+
+            <ion-card-content>
+
+              <ion-button expand="full" (click)="addCart(porduct)">Add ao carrinho</ion-button>
+
+            </ion-card-content>
+
+          </ion-card-header>
+
+        </ion-slides>
+
+
+
+
+      </div>
+
+
+  </div>
+
+</ion-content>
